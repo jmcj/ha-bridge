@@ -1,9 +1,9 @@
 # ha-bridge
-Emulates Philips Hue api to other home automation gateways such as an Amazon Echo or Google Home.  The Bridge handles basic commands such as "On", "Off" and "brightness" commands of the hue protocol.  This bridge can control most devices that have a distinct API.
+Emulates Philips Hue api to other home automation gateways such as an Amazon Echo or Google Home.  The Bridge handles basic commands such as "On", "Off" and "Brightness" commands of the Hue protocol.  This bridge can control most devices that have a distinct API.
 
 **ATTENTION: This requires a physical Amazon Echo, Dot or Tap and does not work with prototype devices built using the Alexa Voice Service e.g. Amazon's Alexa AVS Sample App and Sam Machin's AlexaPi. The AVS version does not have any capability for Hue Bridge discovery!**
 
-**NOTE: This software does require the user to have knwoledge on how processes run on Linux or Windows with java. Also, an understanding of networking basics will help as well. This system reveives upnp udp multicast packets from devices to be found, so that is some thing to understand. Please make sure you have all your devices use static IP addresses from your router. Most all questions have been answered already. PLEASE USE GOOGLE TO FIND YOUR ANSWERS!**
+**NOTE: This software does require the user to have knowledge on how processes run on Linux or Windows with Java. Also, an understanding of networking basics will help as well. This system reveives upnp udp multicast packets from devices to be found, so that is some thing to understand. Please make sure you have all your devices use static IP addresses from your router. Most all questions have been answered already. PLEASE USE GOOGLE TO FIND YOUR ANSWERS!**
 
 **NOTE: This software does not control Philips Hue devices directly. A physical Philips Hue Hub is required for that, by which the ha-bridge can then proxy all of your real Hue bridges behind this bridge.**
 
@@ -34,7 +34,7 @@ ATTENTION: Due to port 80 being the default, Linux restricts this to super user.
 java -jar ha-bridge-4.0.0.jar
 ```
 ### Automation on Linux systems
-To have this configured and running automatically there are a few resources to use. One is using Docker and a docker container has been built for this and can be gotten here: https://github.com/aptalca/docker-ha-bridge
+To have this configured and running automatically there are a few resources to use. One is using Docker and a docker container has been built for this and you can get it here: https://github.com/aptalca/docker-ha-bridge
 
 Create the directory and make sure that ha-bridge-4.0.0.jar is in your /home/pi/habridge directory.
 ```
